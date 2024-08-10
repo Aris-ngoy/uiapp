@@ -8,5 +8,17 @@ export const Items : Item[] = [
     {
         title: 'Animated Number',
         route: '(dashboard)/numbers'
+    },
+    {
+        title: 'Animated scroll',
+        route: '(dashboard)/scroll'
+    },
+    {
+        title: 'Animated Text Input',
+        route: '(dashboard)/textinput'
+    },
+    {
+        title: 'Animated Cards',
+        route: '(dashboard)/cards'
     }
 ]
