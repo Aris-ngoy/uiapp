@@ -28,6 +28,10 @@ export const Items : Item[] = [
     {
         title: 'Animated List View',
         route: '(dashboard)/listview'
+    },
+    {
+        title: 'Animated Circular Text',
+        route: '(dashboard)/circular-text'
     }
 ]
 
