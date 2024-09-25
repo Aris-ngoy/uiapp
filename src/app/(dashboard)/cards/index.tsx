@@ -19,18 +19,18 @@ export default function CardsScreen() {
     const activeIndex = useSharedValue(0)
 
     const flingRight = Gesture.Fling().direction(Directions.RIGHT).onStart((e) => {
-        console.log('fling right')
         if(activeIndex.value === 0) {
             return
         }
+        console.log('fling right')
         activeIndex.value = withTiming(activeIndex.value - 1, { duration })
     })
 
     const flingLeft = Gesture.Fling().direction(Directions.LEFT).onStart((e) => {
-        console.log('fling left')
         if(activeIndex.value === cardItems.length - 1) {
             return
         }
+        console.log('fling left')
         activeIndex.value = withTiming(activeIndex.value + 1, { duration })
     })
 

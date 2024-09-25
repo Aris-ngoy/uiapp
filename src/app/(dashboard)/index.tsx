@@ -1,5 +1,5 @@
 import { Text } from "@/components/Text";
-import { FlatList, SafeAreaView, StyleSheet } from "react-native";
+import { FlatList, Platform, SafeAreaView, StyleSheet } from "react-native";
 import { Items } from "@/utils/utils";
 import DashboardItem from "@@/src/components/DashboardItem";
 import { useCallback } from "react";
@@ -27,7 +27,9 @@ export default function DashboardScreen() {
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1
+        flex: 1,
+        paddingTop : 10,
+        paddingHorizontal : 15
     },
     title: {
         fontSize: 24,

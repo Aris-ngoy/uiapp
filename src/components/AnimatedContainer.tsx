@@ -4,7 +4,7 @@ import Animated, { Extrapolation, interpolate, SharedValue, useAnimatedStyle } f
 
 export const windowWidth = Dimensions.get('window').width
 export const width = windowWidth * .8
-const height = width * .6
+const height = width * .75
 export const paddingLeft = 30;
 
 //generate random color based on the index
@@ -47,11 +47,10 @@ const AnimatedContainer: FC<Item> = ({ index, scrollOffset }) => {
         const scale = interpolate(
             currentIndex,
             [index -2, index -1, index, index + 1],
-            [0.8, 0.9, 1, 1],
-            Extrapolation.CLAMP
+            [0.88, 0.93, 1, 1]
         )
         return {
-            left : paddingLeft,
+            left : width * .12,
             transform: [{ translateX : scrollOffset.value + translateX }, { scale }],
         }
     })
